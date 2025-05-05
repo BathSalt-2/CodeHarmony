@@ -6,7 +6,7 @@ Transform your ideas into working code with CodeHarmony, an AI-powered code gene
 
 ## 🚀 Live Demo
 
-Visit [CodeHarmony](codeharmony.netlify.app/) to try it yourself.
+Visit [CodeHarmony](https://codeharmony.netlify.app/) to try it yourself.
 
 ## ✨ Key Features
 
