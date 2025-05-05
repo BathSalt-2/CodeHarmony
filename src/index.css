@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-white bg-dark-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl leading-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl leading-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-accent-500;
+  }
+
+  .code-block {
+    @apply font-mono text-sm bg-dark-500 rounded-lg p-4 overflow-x-auto text-white;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-dark-400;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary-500 hover:bg-secondary-600 text-white focus:ring-secondary-400;
+  }
+
+  .btn-outline {
+    @apply btn bg-transparent border border-white/20 hover:bg-white/10 text-white focus:ring-white/30;
+  }
+
+  .card {
+    @apply rounded-xl bg-dark-200 border border-dark-100 shadow-lg overflow-hidden transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:border-primary-600/50 hover:shadow-primary-600/10 hover:shadow-xl;
+  }
+
+  .feature-card {
+    @apply card card-hover p-6;
+  }
+
+  .pricing-card {
+    @apply card p-6 flex flex-col h-full;
+  }
+
+  .testimonial-card {
+    @apply card p-6;
+  }
+
+  .icon-highlight {
+    @apply bg-gradient-to-br from-primary-500 to-secondary-500 p-3 rounded-lg inline-flex;
+  }
+
+  .nav-link {
+    @apply px-3 py-2 rounded-md font-medium text-white/70 hover:text-white transition-colors duration-200;
+  }
+
+  .nav-link.active {
+    @apply text-white;
+  }
+}
+
+/* Code syntax highlighting */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-gray-400;
+}
+
+.token.punctuation {
+  @apply text-gray-300;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  @apply text-accent-400;
+}
+
+.token.boolean,
+.token.number {
+  @apply text-secondary-300;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  @apply text-success-300;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  @apply text-warning-300;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  @apply text-primary-400;
+}
+
+.token.function,
+.token.class-name {
+  @apply text-secondary-400;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  @apply text-accent-300;
+}
